@@ -1,0 +1,22 @@
+<div class="product_container">
+
+  <div class="sidebar_left"></div>
+
+  <div class="product_details" *ngIf="product">
+    <img src="{{product.image}}" alt="">
+    <div class="product_inner">
+      <h3>{{product.name}}</h3>
+      <p>{{product.description}}</p>
+
+      <div class="best_price" (click)="addToCart(product)">
+        <div class="best_price_inner">
+          <h4>{{product.price | currency}}</h4>
+          <p class="best_price_text">BEST PRICE</p>
+        </div>
+        <div class="buy">Buy</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

@@ -1,0 +1,51 @@
+<div class="product_container">
+
+  <div class="sidebar_left"></div>
+
+  <div class="product_cart">
+
+    <div class="product_cart_inner">
+      <p *ngIf="items.length == 0">Checkout Empty!</p>
+
+      <div class="cart" *ngFor="let item of items">
+        <span><img src="{{item.image}}" alt=""></span>
+        <br>
+        <span>{{item.name}}</span>
+        <br>
+        <span class="price">{{item.price | currency}}</span>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="sum">Sum:
+      <div class="sum_inner"></div>
+    </div>
+    <br>
+    <button class="clearCarts" (click)="clearItems()">Clear Checkout</button>
+    <br>
+    <a routerLink="/shipping">Shipping Prices</a>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+      <div>
+        <br>
+        <label>Name</label>
+        <br>
+        <input type="text" formControlName="name">
+        <br>
+        <br>
+      </div>
+
+      <div>
+        <label>Address</label>
+        <br>
+        <input type="text" formControlName="address">
+        <br>
+        <br>
+      </div>
+
+      <button type="submit">Purchase</button>
+    </form>
+  </div>
+
+</div>

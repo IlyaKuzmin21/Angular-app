@@ -1,0 +1,23 @@
+<div class="product_container">
+
+  <div class="sidebar_left">
+    <button class="toggle" (click)="toggle()">3 carts</button>
+  </div>
+
+  <div class="block_center">
+    <div
+      class="cart"
+      [ngClass]="{invisible: visibility}"
+      *ngFor="let product of products; index as productId" [routerLink]="['/products', productId]">
+
+      <img src="{{product.image}}" alt="">
+
+      <div class="product_inner">
+
+        <h3>{{ product.name }}</h3>
+        <h4>{{product.price | currency}}</h4>
+      </div>
+    </div>
+  </div>
+
+</div>

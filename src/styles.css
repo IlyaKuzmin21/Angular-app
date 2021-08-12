@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: blue;
+}
+
+button {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5%;
+  margin-top: 5px;
+  font-size: 16px;
+  box-shadow: black 2px 2px 2px 0px;
+
+  background: rgb(93, 129, 177);
+  border: none;
+
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
+
+.product_container {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10% 18% 2%;
+}
+
+.sidebar_left {
+  position: fixed;
+  padding-top: 10%;
+  width: 20%;
+  height: 100vh;
+  z-index: 900;
+  box-shadow: 2px 0 20px #ccc;
+  background: #f1f6ff;
+}
+

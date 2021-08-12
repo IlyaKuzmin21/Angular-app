@@ -1,0 +1,22 @@
+<div class="product_container">
+
+  <div class="sidebar_left"></div>
+
+  <div class="product_shipping">
+    <a routerLink="/cart" class="checkout_check">Back to Checkout</a>
+
+    <div class="product_shipping_inner">
+      <div
+        class="product_shipping_cart"
+        *ngFor="let shipping of shippingCosts | async">
+        <br>
+        <span>{{shipping.type}}</span>
+        <br>
+        <span>{{shipping.price | currency}}</span>
+        <br>
+        <br>
+      </div>
+    </div>
+
+  </div>
+</div>
