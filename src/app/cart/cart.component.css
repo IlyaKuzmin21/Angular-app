@@ -6,6 +6,7 @@ input {
   border: none;
   border-bottom: 1px solid black;
   outline: none;
+
   transition: all 150ms ease-in-out;
 }
 
@@ -15,12 +16,13 @@ input:active {
 }
 
 .product_container {
-  padding: 0;
   flex-wrap: nowrap;
+  padding: 0;
 }
 
 .cart {
   flex: 1 0 25%;;
+
   padding: 0 15px;
   margin-bottom: 15px;
   cursor: pointer;
@@ -34,21 +36,23 @@ input:active {
 }
 
 .product_cart_inner {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .sum {
-  background: lightgreen;
-  color: black;
+  display: flex;
+
   width: fit-content;
+  color: black;
   font-size: 30px;
   padding: 5px 20px;
   margin-top: 20px;
+
   border: 1px solid green;
   border-radius: 5px;
-  display: flex;
+  background: lightgreen;
 }
 
 .sum_inner {

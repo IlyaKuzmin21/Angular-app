@@ -1,7 +1,7 @@
 .product_container {
   display: block;
-  padding: 0;
   flex-wrap: nowrap;
+  padding: 0;
 }
 
 .product_shipping {
@@ -11,20 +11,22 @@
 
 .product_shipping_inner {
   display: flex;
+  justify-content: center;
   width: 80%;
   margin-top: 5%;
-  justify-content: center;
 }
 
 .product_shipping_cart {
   display: block;
+
   width: 250px;
   padding: 40px 0;
   font-size: 30px;
   text-align: center;
-  background: #f1f6ff;
+
   border-radius: 5px;
   box-shadow: 0 0 20px #ccc;
+  background: #f1f6ff;
 }
 
 .product_shipping_cart:nth-child(2) {

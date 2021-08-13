@@ -9,7 +9,6 @@ export class CartService {
 
   addToCart(product: any) {
     let i: number = 0
-
     // @ts-ignore
     this.items.push(product)
     for (let number in this.items) {

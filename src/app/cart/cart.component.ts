@@ -38,8 +38,8 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = this.cartService.getItems()
-
     let i = 0
+
     for (let item in this.items) {
       i += this.items[item].price
     }

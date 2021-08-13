@@ -12,14 +12,11 @@ export class ProductListComponent implements OnInit {
 
   toggle() {
     this.visibility = !this.visibility
-    if (this.visibility) {
-      // @ts-ignore
-      document.querySelector('.toggle').innerHTML = 4 + ' carts'
-    } else {
-      // @ts-ignore
-      document.querySelector('.toggle').innerHTML = 3 + ' carts'
-    }
+    const toggle = document.querySelector('.toggle')
+    // @ts-ignore
+    this.visibility ? toggle.innerHTML = 4 + ' carts' : toggle.innerHTML = 3 + ' carts'
   }
+
   constructor() { }
 
   ngOnInit(): void {

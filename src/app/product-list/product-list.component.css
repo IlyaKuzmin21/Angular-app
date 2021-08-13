@@ -3,7 +3,7 @@ div {
 }
 
 img {
-  height: 30vh;
+  height: 20vh;
 }
 
 .product_inner {
@@ -17,7 +17,8 @@ img {
 
 .cart {
   flex: 1 0 25%;
-  height: 52vh;
+  height: 30vh;
+
   padding: 0 15px;
   margin-bottom: 15px;
   cursor: pointer;
@@ -31,22 +32,25 @@ img {
 }
 
 .block_center {
-  width: 90%;
-  font-size: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+
+  width: 90%;
+  font-size: 20px;
+  align-items: center;
+
   padding-top: 10%;
   padding-left: 22%;
 }
 
 .invisible {
   flex: 1 0 33%;
+  margin-bottom: 50px;
 }
 
 .invisible img {
-  height: 45vh;
+  height: 24vh;
 }
 
 .toggle {

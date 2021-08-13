@@ -2,6 +2,12 @@ div {
   margin-bottom: 20px;
 }
 
+h3,
+h4,
+p {
+  padding: 10px;
+}
+
 img {
   height: 500px;
   transition: all 150ms ease-in-out;
@@ -11,20 +17,14 @@ img:hover {
   transform: scale(1.1);
 }
 
-h3,
-h4,
-p {
-  padding: 10px;
-}
-
 button {
   margin: 10px;
   font-size: 28px;
 }
 
 .product_container {
-  padding: 0;
   flex-wrap: nowrap;
+  padding: 0;
 }
 
 .product_details {
@@ -41,17 +41,18 @@ button {
 .best_price {
   display: flex;
   justify-content: space-between;
-  border: 1px solid green;
-  background: lightgreen;
+
   width: 220px;
+  margin-top: 20px;
+  margin-bottom: 0;
   cursor: pointer;
   text-align: center;
-  margin-top: 20px;
-
-  border-radius: 5px;
-  margin-bottom: 0;
 
   box-shadow: black 2px 2px 2px 0;
+  border: 1px solid green;
+  border-radius: 5px;
+  background: lightgreen;
+
   transition: all 150ms ease-in-out;
 }
 
@@ -67,9 +68,9 @@ button {
 
 .buy {
   display: flex;
-  align-items: center;
   width: 85px;
   font-size: 38px;
+  align-items: center;
   margin-bottom: 0;
 }
 
@@ -83,6 +84,7 @@ button {
   content: '';
   width: 30px;
   height: 3px;
+
   margin: -14px auto 5px;
   background: black;
 }
