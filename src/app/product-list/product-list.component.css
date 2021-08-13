@@ -3,7 +3,7 @@ div {
 }
 
 img {
-  height: 20vh;
+  height: 65%;
 }
 
 .product_inner {
@@ -17,10 +17,10 @@ img {
 
 .cart {
   flex: 1 0 25%;
-  height: 30vh;
+  height: 200px;
 
   padding: 0 15px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   cursor: pointer;
 
   transition: all 150ms ease-in-out;
@@ -46,14 +46,14 @@ img {
 
 .invisible {
   flex: 1 0 33%;
-  margin-bottom: 50px;
+  margin-bottom: 85px;
+  font-size: 25px;
 }
 
 .invisible img {
-  height: 24vh;
+  height: 85%;
 }
 
 .toggle {
   margin-left: 15%;
 }
-
