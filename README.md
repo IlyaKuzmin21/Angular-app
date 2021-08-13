@@ -1,5 +1,7 @@
 # MyApp
 
+Navigate to https://ilyakuzmin21.github.io/Angular-app/ to see web-app.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
 ## Development server
